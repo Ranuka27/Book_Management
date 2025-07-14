@@ -9,6 +9,9 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+
+
+app.UseHttpsRedirection();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -16,9 +19,6 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
     print("Hello 123");
 }
-
-app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();
