@@ -14,7 +14,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    print("Hello");
+    print("Hello 123");
 }
 
 app.UseHttpsRedirection();
